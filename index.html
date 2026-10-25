@@ -548,6 +548,28 @@
     font-family:'JetBrains Mono',monospace; font-size:11.5px;
     color:var(--muted-on-ink);
   }
+  .form-branding{
+    grid-column: 1 / -1;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--ink-line);
+    text-align: center;
+  }
+  .form-branding a{
+    font-family:'JetBrains Mono',monospace;
+    font-size:11.5px;
+    color:var(--muted-on-ink);
+    text-decoration:none;
+    display:inline-block;
+    transition:color 0.2s ease;
+  }
+  .form-branding a:hover{
+    color:var(--text-on-ink);
+  }
+  .form-branding a strong{
+    font-weight:600;
+    color:var(--text-on-ink);
+  }
   .form-status{
     grid-column:1/-1;
     font-family:'JetBrains Mono',monospace; font-size:13px;
@@ -865,6 +887,12 @@
         <div class="form-submit">
           <button type="submit" class="btn-send" id="btnSend">Send Message →</button>
           <span class="form-note">No spam. Honest reply guaranteed.</span>
+        </div>
+
+        <div class="form-branding" id="formBranding">
+          <a href="https://forms.qwikmailer.in" target="_blank" rel="noopener noreferrer">
+            Powered by <strong>QwikForms</strong>
+          </a>
         </div>
 
         <div class="form-status" id="formStatus"></div>
